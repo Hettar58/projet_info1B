@@ -1,0 +1,36 @@
+general:
+barre de menu avec logo du site et retour vers accueuil
+index.html
+    titre: ToLove université 
+    desc rapide
+    lien vers les 4 autres pages
+
+Connexion.html
+    formulaire simple contenant input pour login, mdp, et co avec FB
+    son quand on clique sur le bouton
+    fonction pour verifier entrées
+
+inscription.html
+    Nom
+    Prenom
+    age
+    Location
+    sexe
+    université
+    points d'intérets
+    filière
+    préférences
+    son quand on clique sur le bouton
+    fonction pour valider le remplissage
+
+a propos.html
+    quel est l'intéret du site
+    a propos des créateurs
+    video propagande bidon
+    fonction js accesibilité
+
+recherchez votre ame soeur.html
+    fonction JS de recherche
+    affichage resultats
+
+gestion_compte.html
