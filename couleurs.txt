@@ -1,0 +1,26 @@
+#F9DFF1 --> rose tres tres clair
+#B50E80 --> rose foncé limite violet
+#FDBC1A --> jaune moutarde
+#46917A --> jade qui tire sur le vert
+#362909 --> noir mais pas trop
+
+rose clair en fond:
+    -> jaune en 1er contraste
+    -> vert en 2eme contraste
+    -> noir pour les polices
+
+rose foncé en fond:
+    -> noir pour le texte
+    -> vert en 1er contraste
+    -> rose clair en contraste pour les icones/blocs à contraster
+
+noir en fond:
+    -> rose foncé en 1er contraste
+    -> rose clair pour les polices
+    -> vert en 2e contraste ??
+
+vert en fond:
+    -> jaune en 1ere contraste
+    -> rose clair pour le texte 
+    -> et/ou noir pour le texte
+    -> rose foncé en 2e contraste

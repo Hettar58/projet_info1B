@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+    <title>ToLove Université | Accueil</title>
+    <meta http-equiv='Content-Type' content="text/html; charset='UTF-8'" />
+    <meta name="authors" content="Yann Trou, Wassim Djellat"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/style_base.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style_inscription.css" />
+</head>
+<body>
+    <a href="index.html"><img class="logo" src="../IMG/logo.png" /></a>
+    <p class="menu">
+        <img src="../IMG/info-circle.svg" class="icon"/><a href="a_propos.html">A propos</a>
+        <span class="separator"></span>
+        <img src="../IMG/sign-in-alt.svg" class="icon"/><a href="connexion.html">Se Connecter</a>
+        <span class="separator"></span>
+        <img src="../IMG/file-signature.svg" class="icon"/><a href="inscription.html">S'inscrire</a>
+    </p>
+
+    <div class="retour" id="retour">RETOUR</div>
+    <form method="post" action="inscription.php">
+        <fieldset>
+            <legend>Informations générales</legend>
+            <label for="nom">Nom: </label>
+            <input type="text" id="nom" />
+
+            <label for="prenom">Prénom: </label>
+            <input type="text" id="prenom" />
+
+            <label for="sexe">Sexe: </label>
+            <select id="sexe">
+                <option selected="selected">Choississez...</option>
+                <option>Masculin</option>
+                <option>Féminin</option>
+                <option>Autre</option>
+            </select>
+            
+            <label for="age">Date de naissance: </label>
+            <select id="jour">
+                <option selected="selected">Jour...</option>
+            </select>
+            <select id="mois">
+                <option>Janvier</option>
+                <option>Février</option>
+                <option>Mars</option>
+                <option>Avril</option>
+                <option>Mai</option>
+                <option>Juin</option>
+                <option>Juillet</option>
+                <option>Aout</option>
+                <option>Septembre</option>
+                <option>Octobre</option>
+                <option>Novembre</option>
+                <option>Décembre</option>
+                <option selected="selected">Mois...</option>
+            </select>
+            
+            <label for="annee">Année: </label>
+            <input type="text" id="annee" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Localisation</legend>
+            <label for="ville">Ville: </label>
+            <input type="text" id="ville" />
+
+            <label for="adresse">Adresse: </label>
+            <input type="text" id="adresse" />
+
+            <label for="code_postal">Code postal: </label>
+            <input type="text" id="code_postal" />
+
+            <input type="checkbox" id="ne_pas_montrer_adresse" checked="checked"/>
+            <label for="ne_pas_montrer_adresse">Je ne veut pas que mon adresse précise soit indiquée sur le site</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Université</legend>
+            <label for="academie">Académie: </label>
+            <input type="text" id="academie" />
+
+            <label for="filiere">Filière: </label>
+            <input type="text" id="filiere" />
+
+            <label for="structure">Structure: (UFR, IUT, AgroSup, ...)</label>
+            <input type="text" id="structure" />
+        </fieldset>
+
+        <fieldset>
+            <legend>Préférences: </legend>
+            <label for="orientation_sexuelle">Orientation sexuelle</label>
+            <select id="orientation_sexuelle">
+                <option selected="selected">Choississez...</option>
+                <option>Hétérosexuel(le)</option>
+                <option>Homosexuel (lesbienne)</option>
+                <option>Bisexuel(le)</option>
+                <option>autre</option>
+            </select>
+            <textarea rows="3" cols="150">Décrivez vos points d'intérets</textarea>
+        </fieldset>
+        
+        <input type="checkbox" id="LU_accept" />
+        <label for="LU_accept">J'ai lu et j'accepte le contrat de licence utilisateur (disponible <a href="reglement.html">ici</a>)</label><br />
+        <input type="submit" id="submit" value="S'inscrire" /><br />
+        <input type="reset" id="reset" value="Tout effacer" /><br />
+    </form>
+    <!--CONTENU AFFICHE PAR LE NAVIGATEUR-->
+    <p class="footer">
+        &copy;opyleft Yann Trou, Wassim Djellat, 2018
+    </p>
+    <script type="text/javascript" src="../JS/base.js"></script>
+    <script type="text/javascript" src="../JS/inscription.js"></script>
+</body>
+</html>

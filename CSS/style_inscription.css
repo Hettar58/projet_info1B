@@ -1,0 +1,46 @@
+input[type=text]{
+  border:none;
+  border-bottom:solid 1px black;
+  background-color:  #F9DFF1;
+}
+
+input[type=text]:focus{
+  border-bottom:solid 2px  #46917A;
+}
+
+textarea{
+  border:solid black 1px;
+  border-radius:5px;
+  resize:none;
+  width:100%;
+}
+
+fieldset{
+  border-radius: 10px;
+}
+
+label{
+  margin-left:20px;
+}
+
+input[type=button], input[type=submit] {
+  background-color: #46917A;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  width:100%;
+  margin-top:10px;
+  cursor: pointer;
+}
+
+input[type=reset]{
+  background-color: #CC0000;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  width:100%;
+  margin-top:10px;
+  cursor: pointer;
+}

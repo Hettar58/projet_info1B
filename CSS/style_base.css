@@ -1,0 +1,59 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F9DFF1; /*rose clair*/
+    color:#362909;
+}
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    text-align:center;
+    background-color: #B50E80;
+    height:40px;
+    padding-top:10px;
+}
+
+.menu a {
+    text-decoration:none;
+    color:#FDBC1A;
+    font-size:1.4em;
+}
+
+.menu a:hover{
+    border-bottom:solid #FDBC1A 2px;
+}
+
+.menu .icon{
+    vertical-align:text-bottom;
+    margin-left:15px;
+    margin-right:7px;
+}
+.presentation{
+    margin-left:10px;
+}
+
+.icon{
+    width:20px;
+    height:20px;
+}
+
+.separator{
+    border:solid black 1px;
+    margin-left:10px;
+    margin-right: 10px;
+}
+/* CONFIG MENU HORIZONTAL SIMPLE LIGNE
+.menu{
+    background-color: aquamarine;
+    padding-top:20px;
+    text-align:center;
+    padding-bottom:29px;
+}
+
+.menu a{
+    margin-left:5px;
+    margin-right:5px;
+}*/

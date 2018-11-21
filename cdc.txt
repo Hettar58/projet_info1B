@@ -1,5 +1,9 @@
 general:
-barre de menu avec logo du site et retour vers accueuil
+barre de menu avec logo du site et retour vers accueuil + icones 
+utiliser preventDefault pour empécher le comportement standard d'un formulaire.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------
+CONTENU PAGES HTML:
 index.html
     titre: ToLove université 
     desc rapide
@@ -11,10 +15,17 @@ Connexion.html
     fonction pour verifier entrées
 
 inscription.html
+formulaire interactif
     Nom
     Prenom
+    adresse mail
+    mot de passe
     age
     Location
+        ville
+        code postal
+        adresse
+        region + departement
     sexe
     université
     points d'intérets
@@ -34,3 +45,33 @@ recherchez votre ame soeur.html
     affichage resultats
 
 gestion_compte.html
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+
+CLASSES CSS:
+
+classe body pour le corps de la page
+classe logo pour le logo du site
+classe menu pour le menu de navigation 
+menu > a pour les liens présents dans le menu
+classe présentation pour le texte de présentation sur la page d'accueuil
+classe icon pour les icones FA
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+
+ID JAVASCRIPT:
+
+inscription.html (formulaire)
+    -nom (text) -> nom de la personne
+    -prenom (text)-> prenom de la personne
+    -sexe (select) -> sexe de la personne
+    -age (null) -> age de la personne (abstrait)
+    -jour (select) -> jour de l'age de la personne
+    -mois (select) -> mois de l'age de la personne
+    -annee (text) -> annee de l'age de la personne
+    -ville (text) -> ville de la personne
+    -adresse (text) -> adresse de la personne 
+    -code_postal (text) -> code postal de la personne
+    -ne_pas_montrer_adresse (checkbox) -> ne pas montrer l'adresse précise sur le profil
+    -academie (text) -> académie de la personne
+    
