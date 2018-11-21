@@ -9,19 +9,21 @@
     <link rel="stylesheet" type="text/css" href="../CSS/style_connexion.css" />
 </head>
 <body>
-    <a href="index.html"><img class="logo" src="../IMG/logo.png" /></a>
+    <p>
+        <a href="index.html"><img class="logo" src="../IMG/logo.png" alt="logo de ToLove Université"/></a>
+    </p>
     <p class="menu">
-        <img src="../IMG/info-circle.svg" class="icon"/><a href="a_propos.html">A propos</a>
-        <span class="separator"></span>
-        <img src="../IMG/sign-in-alt.svg" class="icon"/><a href="connexion.html">Se Connecter</a>
-        <span class="separator"></span>
-        <img src="../IMG/file-signature.svg" class="icon"/><a href="inscription.html">S'inscrire</a>
+            <img src="../IMG/info-circle.svg" class="icon" alt="icone"/><a href="a_propos.html">A propos</a>
+            <span class="separator"></span>
+            <img src="../IMG/sign-in-alt.svg" class="icon" alt="icone"/><a href="connexion.html">Se Connecter</a>
+            <span class="separator"></span>
+            <img src="../IMG/file-signature.svg" class="icon" alt="icone"/><a href="inscription.html">S'inscrire</a>
     </p>
     <form method = "post" action="connexion.php">
         <fieldset>
             <legend>Connexion standard</legend>
             <label for="login">Identifiant:</label>
-            <input type="text"id="login" />
+            <input type="text" id="login" />
             <br />
             <label for="password">Mot de passe:</label>
             <input type="password" id="password" />
@@ -30,7 +32,7 @@
         </fieldset>
         <fieldset>
             <legend>Autres méthodes</legend>
-            <label for="fb_connect"><img src="../IMG/facebook.svg" class="icon"></label>
+            <label for="fb_connect"><img src="../IMG/facebook.svg" class="icon" alt="icone de connexion facebook"/></label>
             <input type="button" id="fb_connect" value="Se connecter avec Facebook" />
         </fieldset>
     </form>

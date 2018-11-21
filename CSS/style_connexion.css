@@ -1,3 +1,29 @@
-#fb_connect{
-  background-color:aliceblue;
+fieldset{
+  text-align:center;
+  border-radius:10px;
+  width:20%;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+legend{
+  margin-left:auto;
+  margin-right:auto;
+  text-decoration: underline;
+  font-size: larger;
+}
+
+input[type=text], input[type=password]{
+  border:none;
+  border-bottom:black solid 1px;
+  background-color:#F9DFF1;
+}
+
+input[type=button], input[type=submit]{
+  border:none;
+  width:100%;
+  background-color:#46917A;
+  color:white;
+  margin-top:5px;
+  padding:3px;
 }

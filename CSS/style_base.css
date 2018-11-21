@@ -45,6 +45,12 @@ body{
     margin-left:10px;
     margin-right: 10px;
 }
+
+.marked{
+    font-size: 1.2em;
+    text-decoration:underline;
+    font-style: italic;
+}
 /* CONFIG MENU HORIZONTAL SIMPLE LIGNE
 .menu{
     background-color: aquamarine;
