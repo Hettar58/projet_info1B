@@ -19,7 +19,8 @@
             <span class="separator"></span>
             <img src="../IMG/file-signature.svg" class="icon" alt="icone"/><a href="inscription.html">S'inscrire</a>
     </p>
-    <form method = "post" action="connexion.php">
+    <div id="output"></div>
+    <form method = "post" action="connexion.php" id="connect_form">
         <fieldset>
             <legend>Connexion standard</legend>
             <label for="login">Identifiant:</label>
@@ -28,7 +29,7 @@
             <label for="password">Mot de passe:</label>
             <input type="password" id="password" />
             <br />
-            <input type="submit" value="Se Connnecter" />
+            <input type="submit" value="Se Connnecter" id="submit"/>
         </fieldset>
         <fieldset>
             <legend>Autres méthodes</legend>
@@ -41,5 +42,6 @@
         &copy;opyright Yann Trou, Wassim Djellat, 2018
     </p>
     <script type="text/javascript" src="../JS/base.js"></script>
+    <script type="text/javascript" src="../JS/connexion.js"></script>
 </body>
 </html>

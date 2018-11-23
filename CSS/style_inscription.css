@@ -6,6 +6,7 @@ input[type=text]{
 
 input[type=text]:focus{
   border-bottom:solid 2px  #46917A;
+  color:#46917A;
 }
 
 textarea{
