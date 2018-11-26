@@ -1,12 +1,19 @@
+@keyframes colorblink {
+    0%{color:red;}
+    50%{color:blue;}
+    100%{color:white;}
+}
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F9DFF1; /*rose clair*/
     color:#362909;
 }
 .logo{
+    height:100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom:50px;
 }
 
 .menu{
@@ -33,6 +40,7 @@ body{
 }
 .presentation{
     margin-left:10px;
+    font-size:1.2em;
 }
 
 .icon{
@@ -50,6 +58,46 @@ body{
     font-size: 1.2em;
     text-decoration:underline;
     font-style: italic;
+    animation: colorblink 0.2s infinite;
+}
+
+.float{
+    float:right;
+}
+
+#float{
+    float:right;
+}
+
+.beaute{
+    float:left;
+    width:100px;
+    margin-left: 400px;
+}
+.beaute1{
+    float:right;
+    width:100px;
+    margin-right:400px;
+}
+
+.help{
+    background-color:#46917A;
+    position:absolute;
+    padding:5px;
+    bottom:10px;
+    right:45px;
+    border-radius: 5px;
+}
+
+.help_head{
+    position:absolute;
+    margin-left:2px;
+    vertical-align: middle;
+    width:30px;
+    height: 30px;
+    right: 10px;
+    bottom:10px;
+    
 }
 /* CONFIG MENU HORIZONTAL SIMPLE LIGNE
 .menu{

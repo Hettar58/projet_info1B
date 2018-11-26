@@ -27,3 +27,27 @@ input[type=button], input[type=submit]{
   margin-top:5px;
   padding:3px;
 }
+table{
+  text-align:center;
+  width:100%;
+  border-collapse:collapse;
+}
+td{
+  border:solid black 1px;
+  height:25px;
+  width:50%;
+}
+
+tr{
+  border:solid 1px black;
+}
+
+thead{
+  height:50px;
+}
+
+tfoot{
+  height:50px;
+  color:red;
+  cursor:pointer;
+}
