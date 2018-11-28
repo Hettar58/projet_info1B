@@ -17,10 +17,17 @@ textarea{
 }
 
 fieldset{
+  
   border-radius: 10px;
 }
 
+input, select, textarea{
+  display:none;
+}
+
+
 label{
+  display:none;
   margin-left:20px;
 }
 

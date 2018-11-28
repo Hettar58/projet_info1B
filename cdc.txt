@@ -2,6 +2,7 @@ general:
 barre de menu avec logo du site et retour vers accueuil + icones 
 utiliser preventDefault pour empécher le comportement standard d'un formulaire.
 
+pour le formulaire interactif, faire un giga switch dans une fonction qui sera appellée apres chaque etape. Elle prend un seul parametre, i pour le switch;
 ---------------------------------------------------------------------------------------------------------------------------------------------------
 CONTENU PAGES HTML:
 index.html

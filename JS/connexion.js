@@ -5,7 +5,8 @@ document.getElementById("submit").onclick = function(event){
     console.log("debut de la conexion");
     event.preventDefault();
 
-    if (document.getElementById("login").value == login && document.getElementById("password").value == password){
+    if ((document.getElementById("login").value == login && document.getElementById("password").value == password && sessionStorage.connected == "false") || sessionStorage.connected == "true"){
+        sessionStorage.setItem("connected", "true");
         document.getElementById("connect_form").style.display = "none";
         document.getElementById("compte").style.display = "";
         document.getElementById("nom").innerHTML = sessionStorage.nom;

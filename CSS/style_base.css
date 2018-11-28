@@ -7,9 +7,10 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F9DFF1; /*rose clair*/
     color:#362909;
+    text-align:justify;
 }
 .logo{
-    height:100px;
+    height:110px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -67,17 +68,19 @@ body{
 
 #float{
     float:right;
+    padding-top: 6px;
+    padding-right: 3px;
 }
 
 .beaute{
     float:left;
     width:100px;
-    margin-left: 400px;
+    margin-left: 300px;
 }
 .beaute1{
     float:right;
     width:100px;
-    margin-right:400px;
+    margin-right:300px;
 }
 
 .help{
