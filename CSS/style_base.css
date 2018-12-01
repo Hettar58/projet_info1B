@@ -3,8 +3,13 @@
     50%{color:blue;}
     100%{color:white;}
 }
+
+@font-face{
+    font-family:DinoMiko;
+    src:url("../FONTS/Dinomiko.otf");
+}
 body{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: DinoMiko, Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F9DFF1; /*rose clair*/
     color:#362909;
     text-align:justify;

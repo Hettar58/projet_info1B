@@ -10,116 +10,107 @@
 </head>
 <body>
     <p>
-        <a href="index.html"><img class="logo" src="../IMG/logo.png" alt="logo de ToLove Université" /></a>
+        <img src="../IMG/beautiful.png" class="beaute" alt="rond" />
+        <img src="../IMG/beautiful.png" class="beaute1" alt="rond" />
+        <a href="index.html"><img class="logo" src="../IMG/logo.png" alt="logo de ToLove Université"/></a>
     </p>
     <p class="menu">
-        <img src="../IMG/info-circle.svg" class="icon" alt="icone"/><a href="a_propos.html">A propos</a>
-        <span class="separator"></span>
-        <img src="../IMG/sign-in-alt.svg" class="icon" alt="icone"/><a href="connexion.html">Se Connecter</a>
-        <span class="separator"></span>
-        <img src="../IMG/file-signature.svg" class="icon" alt="icone"/><a href="inscription.html">S'inscrire</a>
+            <img src="../IMG/info-circle.svg" class="icon" alt="icone"/><a href="a_propos.html">A propos</a>
+            <span class="separator"></span>
+            <img src="../IMG/sign-in-alt.svg" class="icon" alt="icone"/><a href="connexion.html">Se Connecter</a>
+            <span class="separator"></span>
+            <img src="../IMG/file-signature.svg" class="icon" alt="icone"/><a href="inscription.html">S'inscrire</a>
+            <img src="../IMG/cog.svg" class="icon" alt="icone" id="float"/> <a href=="profil.html" class="float" id="profil">Profil</a>
     </p>
 
-    <div class="retour" id="retour">RETOUR</div>
+    <div class="retour" id="retour"><img src="../IMG/chevron-left.svg" class="icon" alt="retour"/>RETOUR</div>
     <form method="post" action="inscription.php">
         <div id="indication"></div>
+        <p>
+            <br/>
+            <br/>
+            <label for="nom" id="lbl_nom">Nom: </label>
+            <input type="text" id="nom" />
+
+            <label for="prenom" id="lbl_prenom">Prénom: </label>
+            <input type="text" id="prenom" />
+
+            <label for="sexe" id="lbl_sexe">Sexe: </label>
+            <select id="sexe">
+                <option selected="selected">Choississez...</option>
+                <option>Masculin</option>
+                <option>Féminin</option>
+                <option>Autre</option>
+            </select>
+            
+            <select id="jour">
+                <option selected="selected">Jour...</option>
+            </select>
+            <select id="mois">
+                <option>Janvier</option>
+                <option>Février</option>
+                <option>Mars</option>
+                <option>Avril</option>
+                <option>Mai</option>
+                <option>Juin</option>
+                <option>Juillet</option>
+                <option>Aout</option>
+                <option>Septembre</option>
+                <option>Octobre</option>
+                <option>Novembre</option>
+                <option>Décembre</option>
+                <option selected="selected">Mois...</option>
+            </select>
+            
+            <label for="annee" id="lbl_annee">Année: </label>
+            <input type="text" id="annee" />
+
+            <label for="telephone" id="lbl_telephone">N°de téléphone</label>
+            <input type="text" id="telephone" />
+            
+            <label for="email" id="lbl_email">Addresse Mail</label>
+            <input type="text" id="email" />
+
+            <label for="login" id="lbl_login">Identifiant</label>
+            <input type="text" id="login" />
+
+            <label for="password" id="lbl_password">Mot de passe</label>
+            <input type="password" id="password" />
+                    
+            <label for="ville" id="lbl_ville">Ville: </label>
+            <input type="text" id="ville" />
+
+            <label for="adresse" id="lbl_adresse">Adresse: </label>
+            <input type="text" id="adresse" />
+
+            <label for="code_postal" id="lbl_cp">Code postal: </label>
+            <input type="text" id="code_postal" />
+
+            <input type="checkbox" id="ne_pas_montrer_adresse" checked="checked"/>
+            <label for="ne_pas_montrer_adresse" id="lbl_ne_pas_montrer_adresse">Je ne veut pas que mon adresse précise soit indiquée sur le site</label>
         
-        <br />
-        
-        
-        <label for="nom" id="lbl_nom">Nom: </label>
-        <input type="text" id="nom" />
+            <label for="academie" id="lbl_academie">Académie: </label>
+            <input type="text" id="academie" />
 
-        <label for="prenom" id="lbl_prenom">Prénom: </label>
-        <input type="text" id="prenom" />
+            <label for="filiere" id="lbl_filiere">Filière: </label>
+            <input type="text" id="filiere" />
 
-        <label for="sexe" id="lbl_sexe">Sexe: </label>
-        <select id="sexe">
-            <option selected="selected">Choississez...</option>
-            <option>Masculin</option>
-            <option>Féminin</option>
-            <option>Autre</option>
-        </select>
-        
-        <select id="jour">
-            <option selected="selected">Jour...</option>
-        </select>
-        <select id="mois">
-            <option>Janvier</option>
-            <option>Février</option>
-            <option>Mars</option>
-            <option>Avril</option>
-            <option>Mai</option>
-            <option>Juin</option>
-            <option>Juillet</option>
-            <option>Aout</option>
-            <option>Septembre</option>
-            <option>Octobre</option>
-            <option>Novembre</option>
-            <option>Décembre</option>
-            <option selected="selected">Mois...</option>
-        </select>
-        
-        <label for="annee" id="lbl_annee">Année: </label>
-        <input type="text" id="annee" />
+            <label for="structure" id="lbl_structure">Structure: (UFR, IUT, AgroSup, ...)</label>
+            <input type="text" id="structure" />
 
-        <br />
-
-        <label for="telephone">N°de téléphone</label>
-        <input type="text" id="telephone" />
-        
-        <label for="email">Addresse Mail</label>
-        <input type="text" id="email" />
-
-        <label for="login">Identifiant</label>
-        <input type="text" id="login" />
-
-        <label for="password">Mot de passe</label>
-        <input type="password" id="password" />
-    
-
-    
-        
-        <label for="ville">Ville: </label>
-        <input type="text" id="ville" />
-
-        <label for="adresse">Adresse: </label>
-        <input type="text" id="adresse" />
-
-        <label for="code_postal">Code postal: </label>
-        <input type="text" id="code_postal" />
-
-        <input type="checkbox" id="ne_pas_montrer_adresse" checked="checked"/>
-        <label for="ne_pas_montrer_adresse">Je ne veut pas que mon adresse précise soit indiquée sur le site</label>
-    
-
-    
-        
-        <label for="academie">Académie: </label>
-        <input type="text" id="academie" />
-
-        <label for="filiere">Filière: </label>
-        <input type="text" id="filiere" />
-
-        <label for="structure">Structure: (UFR, IUT, AgroSup, ...)</label>
-        <input type="text" id="structure" />
-    
-
-    
-        
-        <label for="orientation_sexuelle">Orientation sexuelle</label>
-        <select id="orientation_sexuelle">
-            <option selected="selected">Choississez...</option>
-            <option>Hétérosexuel(le)</option>
-            <option>Homosexuel (lesbienne)</option>
-            <option>Bisexuel(le)</option>
-            <option>autre</option>
-        </select>
-        <textarea rows="3" cols="150" id="points_interets">Décrivez vos points d'intérets</textarea>
-    
+            <label for="orientation_sexuelle" id="lbl_or_sex">Orientation sexuelle</label>
+            <select id="orientation_sexuelle">
+                <option selected="selected">Choississez...</option>
+                <option>Hétérosexuel(le)</option>
+                <option>Homosexuel (lesbienne)</option>
+                <option>Bisexuel(le)</option>
+                <option>autre</option>
+            </select>
+            <textarea rows="3" cols="150" id="points_interets">Décrivez vos points d'intérets</textarea>
+        </p>
         <p>
             <input type="checkbox" id="LU_accept" />
-            <label for="LU_accept">J'ai lu et j'accepte le contrat de licence utilisateur (disponible <a href="reglement.html">ici</a>)</label><br />
+            <label for="LU_accept" id="lbl_lu_accept">J'ai lu et j'accepte le contrat de licence utilisateur (disponible <a href="reglement.html">ici</a>)</label><br />
             <input type="submit" id="submit" value="S'inscrire" /><br />
             <input type="reset" id="reset" value="Tout effacer" /><br />
             <input type="button" id="continuer" value="continuer"/>
@@ -129,7 +120,7 @@
     <p class="footer">
         &copy;opyleft Yann Trou, Wassim Djellat, 2018
     </p>
-    <!--<script type="text/javascript" src="../JS/base.js"></script>-->
+    <script type="text/javascript" src="../JS/base.js"></script>
     <script type="text/javascript" src="../JS/inscription.js"></script>
 </body>
 </html>
