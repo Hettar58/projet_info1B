@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr">
+<head>
+    <title>ToLove Université | Accueil</title>
+    <meta http-equiv='Content-Type' content="text/html; charset='UTF-8'" />
+    <meta name="authors" content="Yann Trou, Wassim Djellat"/>
+    <link rel="stylesheet" type="text/css" href="../CSS/style_base.css" />
+    <link rel="stylesheet" type="text/css" href="../CSS/style_profil.css" />
+</head>
+<body>
+    <p>
+        <img src="../IMG/beautiful.png" class="beaute" alt="rond" />
+        <img src="../IMG/beautiful.png" class="beaute1" alt="rond" />
+        <a href="index.html"><img class="logo" src="../IMG/logo.png" alt="logo de ToLove Université"/></a>
+    </p>
+    <p class="menu">
+            <img src="../IMG/info-circle.svg" class="icon" alt="icone"/><a href="a_propos.html">A propos</a>
+            <span class="separator"></span>
+            <img src="../IMG/sign-in-alt.svg" class="icon" alt="icone"/><a href="connexion.html">Se Connecter</a>
+            <span class="separator"></span>
+            <img src="../IMG/file-signature.svg" class="icon" alt="icone"/><a href="inscription.html">S'inscrire</a>
+            <img src="../IMG/cog.svg" class="icon" alt="icone" id="float"/> <a href="profil.html" class="float" id="profil">Profil</a>
+    </p>
+    <div class="retour" id="retour"><img src="../IMG/chevron-left.svg" class="icon" alt="retour"/>RETOUR</div>
+
+    <div id="profil">
+        <img src="../IMG/beautiful.png" class="photo" />
+        <span id="nom"></span><span id="prenom"></span>
+        <br/>
+        <span id="delta_distance">Vous êtes dans la même académie et dans la même filière ! </span>
+        <br/>
+        <span id="a propos"></span>
+    </div>
+    <table id="compte">
+        <thead class="header_compte"><tr><td colspan="2">Données présentes sur le compte</td></tr></thead>
+        <tfoot class="footer_compte" id="flush_account"><tr><td colspan="2">/!\ Effacer le compte de la session locale /!\</td></tr></tfoot>
+        <tbody class="body_compte">
+            <tr>
+                <td>Nom: </td>
+                <td id="nom"></td>
+            </tr>
+            <tr>
+                <td>Prénom: </td>
+                <td id="prenom"></td>
+            </tr>
+            <tr>
+                <td>Sexe: </td>
+                <td id="sexe"></td>
+            </tr>
+            <tr>
+                <td>Jour de naissance: </td>
+                <td id="jour"></td>
+            </tr>
+            <tr>
+                <td>Mois de naissance: </td>
+                <td id="mois"></td>
+            </tr>
+            <tr>
+                <td>Année de naissance: </td>
+                <td id="annee"></td>
+            </tr>
+            <tr>
+                <td>Ville: </td>
+                <td id="ville"></td>
+            </tr>
+            <tr>
+                <td>Code postal: </td>
+                <td id="code_postal"></td>
+            </tr>
+            <tr>
+                <td>adresse: </td>
+                <td id="adresse"></td>
+            </tr>
+            <tr>
+                <td>Académie: </td>
+                <td id="academie"></td>
+            </tr>
+            <tr>
+                <td>Filière: </td>
+                <td id="filiere"></td>
+            </tr>
+            <tr>
+                <td>Structure: </td>
+                <td id="structure"></td>
+            </tr>
+            <tr>
+                <td>Orientation Sexuelle</td>
+                <td id="orientation_sexuelle"></td>
+            </tr>
+        </tbody>
+    </table>
+    <!--CONTENU AFFICHE PAR LE NAVIGATEUR-->
+    <p class="footer">
+        &copy;opyleft Yann Trou, Wassim Djellat, 2018
+    </p>
+    <script type="text/javascript" src="../JS/base.js"></script>
+    <script type="text/javascript" src="../JS/profil.js"></script>
+</body>
+</html>

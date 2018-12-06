@@ -394,6 +394,3 @@ document.getElementById('jour').onclick = function(){
 document.getElementById("continuer").style.display = "block";
 formulaire(0);
 
-document.getElementById("retour").onclick = function(){
-    history.back();
-};

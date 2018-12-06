@@ -8,3 +8,7 @@ else{
     document.getElementById("float").style.display = "none";
     document.getElementById("profil").style.display = "none";
 }
+
+document.getElementById("retour").onclick = function(){
+    history.back();
+};
