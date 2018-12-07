@@ -16,6 +16,8 @@ function animate(message){
     
 }
 function formulaire(i){
+    var regExp_text_only = /^\D+$/;
+    var regExp_digit_only = /^\d+$/;
     var indication = document.getElementById("indication");
     var continuer = false;
     var nom = document.getElementById("nom");
@@ -63,13 +65,14 @@ function formulaire(i){
             
 
             document.getElementById("continuer1").onclick = function(){
-                console.log("clic");
-                if(nom.value == ""){
+                console.log( regExp_digit_only.test(nom.value));
+                if(nom.value == "" || regExp_digit_only.test(nom.value)){
+                    
                     nom.style.backgroundColor = "red";
                     continuer = false;
                 }
                 else{
-                    if(prenom.value == ""){
+                    if(prenom.value == "" || regExp_digit_only.test(prenom.value)){
                         prenom.style.backgroundColor = "red";
                         continuer = false;
                     }else{
@@ -122,7 +125,7 @@ function formulaire(i){
                         continuer = false;
                     }
                     else{
-                        if (annee.value == ""){
+                        if (annee.value == "" || regExp_text_only.test(annee.value)){
                             annee.style.backgroundColor = "red";
                             continuer = false;
                         }
@@ -164,12 +167,12 @@ function formulaire(i){
             }, 3000);
 
             document.getElementById("continuer3").onclick = function(){
-                if (telephone.value == ""){
+                if (telephone.value == "" || regExp_text_only.test(telephone.value)){
                     continuer = false;
                     telephone.style.backgroundColor = "red";
                 }
                 else{
-                    if (email.value == ""){
+                    if (email.value == "" || !(/^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/).test(email.value)){
                         continuer = false;
                         email.style.backgroundColor = "red";
                     }
@@ -227,7 +230,7 @@ function formulaire(i){
             
 
             document.getElementById("continuer4").onclick = function(){
-                if (ville.value == ""){
+                if (ville.value == "" || regExp_digit_only.test(ville.value)){
                     ville.style.backgroundColor = "red";
                     continuer = false;
                 }
@@ -237,7 +240,7 @@ function formulaire(i){
                         adresse.style.backgroundColor = "red";
                     }
                     else{
-                        if (code_postal.value == ""){
+                        if (code_postal.value == "" || regExp_test_only.test(text.value)){
                             continuer = false;
                             code_postal.style.backgroundColor = "red";
                         }
@@ -280,17 +283,17 @@ function formulaire(i){
             
             
             document.getElementById("continuer5").onclick = function(){
-                if (structure.value == ""){
+                if (structure.value == "" || regExp_digit_only.test(structure.value)){
                     structure.style.backgroundColor = "red";
                     continuer = false;
                 }
                 else{
-                    if (academie.value == ""){
+                    if (academie.value == "" || regExp_digit_only.test(academie.value)){
                         academie.style.backgroundColor = "red";
                         continuer = false;
                     }
                     else{
-                        if (filiere.value == ""){
+                        if (filiere.value == "" || regExp_digit_only.test(filiere.value)){
                             filiere.style.backgroundColor = "red";
                             continuer = false;
                         }
