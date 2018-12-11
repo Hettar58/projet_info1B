@@ -4,10 +4,7 @@
     100%{color:white;}
 }
 
-@font-face{
-    font-family:DinoMiko;
-    src:url("../FONTS/Dinomiko.otf");
-}
+
 body{
     font-family: emilys-candy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #F9DFF1; /*rose clair*/
